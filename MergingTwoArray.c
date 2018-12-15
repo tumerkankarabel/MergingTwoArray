@@ -15,20 +15,20 @@ int main() {
 			c[i] = b[b_index];
 			b_index++;
 		}  
-        else if(b_index == b_SIZE) {
-        	c[i] = a[a_index];
-            a_index++;
+        	else if(b_index == b_SIZE) {
+        		c[i] = a[a_index];
+            		a_index++;
 		}  
-        else {
-            if(a[a_index] < b[b_index]) {
-            	c[i] = a[a_index];
-                a_index++;
+        	else {
+            		if(a[a_index] < b[b_index]) {
+            			c[i] = a[a_index];
+                		a_index++;
 			} 
-            else {
-            	c[i] = b[b_index];
-            	b_index++;
-			}
-        }   
+            		else {
+            			c[i] = b[b_index];
+            			b_index++;
+		 	}
+        	}   
 	}
 
 	for(i=0; i<a_SIZE + b_SIZE; i++) {
